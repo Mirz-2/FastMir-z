@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIR'Z - Commande en ligne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4e3c1;
+      margin: 0;
+      padding: 0;
+      color: #4a2c0a;
+    }
+    header {
+      background-color: #e07a1f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    form {
+      background-color: #fff3e0;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #e07a1f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cf6a0e;
+    }
+    footer {
+      background-color: #e07a1f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MIR'Z - Commandez votre petit-déjeuner local</h1>
+  </header>
+
+  <form action="https://formsubmit.co/ton@email.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" required>
+
+    <label for="commande">Votre commande :</label>
+    <textarea id="commande" name="commande" rows="5" required></textarea>
+
+    <label for="heure">Heure de récupération :</label>
+    <input type="time" id="heure" name="heure">
+
+    <button type="submit">Envoyer la commande</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 MIR'Z - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
+
