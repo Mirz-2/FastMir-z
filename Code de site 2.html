@@ -1,89 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIR'Z - Commande en ligne</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4e3c1;
-      margin: 0;
-      padding: 0;
-      color: #4a2c0a;
-    }
-    header {
-      background-color: #e07a1f;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    form {
-      background-color: #fff3e0;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea, select, button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-    button {
-      background-color: #e07a1f;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #cf6a0e;
-    }
-    footer {
-      background-color: #e07a1f;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMaint - Vimonde Tech</title>
 </head>
 <body>
-  <header>
-    <h1>MIR'Z - Commandez votre petit-déjeuner local</h1>
-  </header>
+    <header style="background-color: #2c3e50; color: white; padding: 1em; text-align: center;">
+        <h1>BioMaint</h1>
+        <p>La maintenance préventive des équipements médicaux, adaptée à l'Afrique de l'Ouest</p>
+    </header>
 
-  <form action="https://formsubmit.co/mirakonkobo3@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
+    <nav style="text-align: center; margin: 1em;">
+        <a href="#apropos">À propos</a> | 
+        <a href="#fonctionnalites">Fonctionnalités</a> | 
+        <a href="#equipe">Équipe</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <label for="telephone">Téléphone :</label>
-    <input type="tel" id="telephone" name="telephone" required>
+    <section id="apropos" style="padding: 2em;">
+        <h2>À propos de BioMaint</h2>
+        <p>BioMaint est un logiciel web et mobile développé par Vimonde Tech pour faciliter la maintenance préventive des équipements médicaux. Il répond aux besoins spécifiques des établissements de santé en Afrique de l’Ouest, en commençant par le Burkina Faso.</p>
+    </section>
 
-    <label for="commande">Votre commande :</label>
-    <textarea id="commande" name="commande" rows="5" required></textarea>
+    <section id="fonctionnalites" style="padding: 2em; background-color: #ecf0f1;">
+        <h2>Fonctionnalités principales</h2>
+        <ul>
+            <li>Gestion d’inventaire des équipements</li>
+            <li>Rappels automatiques par SMS</li>
+            <li>Fiches d’intervention numériques</li>
+            <li>Rapports exportables en PDF/Excel</li>
+            <li>Fonctionnement hors-ligne avec synchronisation</li>
+            <li>API pour intégration future avec d'autres systèmes</li>
+        </ul>
+    </section>
 
-    <label for="heure">Heure de récupération :</label>
-    <input type="time" id="heure" name="heure">
+    <section id="equipe" style="padding: 2em;">
+        <h2>Notre équipe</h2>
+        <p><strong>Stéphane N’Golo</strong> – Fondateur & CEO, ingénieur en génie industriel</p>
+        <p><strong>Aminata Kaboré</strong> – Responsable terrain, technicienne biomédicale</p>
+        <p><strong>Dr. Jean-Paul Kassi</strong> – Conseiller stratégique en santé publique</p>
+    </section>
 
-    <button type="submit">Envoyer la commande</button>
-  </form>
+    <section id="contact" style="padding: 2em; background-color: #ecf0f1;">
+        <h2>Contact</h2>
+        <p>Vous souhaitez en savoir plus ou devenir partenaire ? Contactez-nous :</p>
+        <ul>
+            <li>Email : contact@biomaint.tech</li>
+            <li>Téléphone : +226 XX XX XX XX</li>
+            <li>WhatsApp support : disponible 7j/7</li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 MIR'Z - Tous droits réservés</p>
-  </footer>
+    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 1em;">
+        <p>&copy; 2025 BioMaint - Vimonde Tech. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
-
